@@ -180,6 +180,10 @@
   .proj .metric { align-self: flex-start; margin: 18px 0 0; font-weight: 600; font-size: 0.92rem; color: var(--blue); background: #eaf2ff; border-radius: 980px; padding: 7px 15px; }
   .proj .stack { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
   .proj .stack span { font-size: 0.78rem; color: var(--faint); background: var(--bg-tint); border-radius: 980px; padding: 4px 11px; }
+  .proj .repo { display: inline-flex; align-items: center; gap: 7px; margin-top: 20px; font-size: 0.92rem; font-weight: 500; color: var(--blue); }
+  .proj .repo svg { width: 17px; height: 17px; }
+  .proj .repo .arrow { transition: transform .2s; }
+  .proj:hover .repo .arrow { transform: translateX(3px); }
 
   /* Contact */
   .contact { background: var(--bg-section); text-align: center; }
@@ -411,7 +415,7 @@
       <h2 class="sec-title reveal">Things I've built lately.</h2>
       <div class="proj-grid">
 
-        <div class="proj reveal">
+        <a class="proj reveal" href="https://github.com/SaiMulagan/yelp-recommender-system/blob/main/PROJECT_REPORT.pdf" target="_blank" rel="noopener">
           <div class="thumb">
             <svg class="mock" viewBox="0 0 600 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
               <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0071e3"/><stop offset="1" stop-color="#42a5f5"/></linearGradient></defs>
@@ -434,10 +438,14 @@
             <p>A distributed recommendation pipeline on Apache Airflow, MongoDB, and Google Cloud Storage, with a Funk SVD collaborative-filtering model served via FastAPI on Cloud Run.</p>
             <span class="metric">RMSE ≈ 1.33</span>
             <div class="stack"><span>Airflow</span><span>MongoDB</span><span>GCS</span><span>FastAPI</span><span>Docker</span></div>
+            <span class="repo">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.4 9.4 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+              View report on GitHub <span class="arrow">›</span>
+            </span>
           </div>
-        </div>
+        </a>
 
-        <div class="proj reveal">
+        <a class="proj reveal" href="https://github.com/SaiMulagan/LeaseLens" target="_blank" rel="noopener">
           <div class="thumb">
             <svg class="mock" viewBox="0 0 600 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
               <defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7e57c2"/><stop offset="1" stop-color="#ec407a"/></linearGradient></defs>
@@ -455,8 +463,12 @@
             <p>An OCR + LLM extraction system pulling 15 structured fields from unstructured lease PDFs. Swappable LLM and offline-regex extractors behind one interface, with Tesseract OCR and a rule layer that flags policy exceptions.</p>
             <span class="metric">&lt; 1s per document</span>
             <div class="stack"><span>Python</span><span>FastAPI</span><span>Tesseract</span><span>LLMs</span><span>Regex</span></div>
+            <span class="repo">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.4 9.4 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+              View repo on GitHub <span class="arrow">›</span>
+            </span>
           </div>
-        </div>
+        </a>
 
       </div>
     </div>
