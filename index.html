@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Sai Mulagan — Data Scientist & ML Engineer</title>
-<meta name="description" content="Sai Mulagan — Data Scientist and ML Engineer with ~3 years across the full ML lifecycle: ETL, deep learning, LLMs, and cloud MLOps on AWS and GCP." />
+<title>Sai Mulagan | Data Scientist</title>
+<meta name="description" content="Sai Mulagan is a data scientist in San Francisco. Stanford Medicine, Vertex Pharmaceuticals, and Walmart. Python, SQL, LLMs, and cloud MLOps." />
 <meta name="author" content="Sai Mulagan" />
-<meta property="og:title" content="Sai Mulagan — Data Scientist & ML Engineer" />
-<meta property="og:description" content="Full ML lifecycle: ETL, deep learning, LLMs, and cloud MLOps on AWS & GCP." />
+<meta property="og:title" content="Sai Mulagan | Data Scientist" />
+<meta property="og:description" content="Data scientist in San Francisco. From raw data to models that ship." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://saimulagan.github.io/" />
 <meta property="og:image" content="https://saimulagan.github.io/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Sai Mulagan — Data Scientist & ML Engineer" />
-<meta name="twitter:description" content="Full ML lifecycle: ETL, deep learning, LLMs, and cloud MLOps on AWS & GCP." />
+<meta name="twitter:title" content="Sai Mulagan | Data Scientist" />
+<meta name="twitter:description" content="Data scientist in San Francisco. From raw data to models that ship." />
 <meta name="twitter:image" content="https://saimulagan.github.io/og-image.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -124,8 +124,11 @@
 
   /* ---------- STAT STRIP ---------- */
   .stat-strip { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; max-width: var(--wide); margin: 90px auto 0; padding: 0 24px; }
-  .stat-strip > div { text-align: center; padding: 0 18px; border-right: 1px solid var(--line); }
-  .stat-strip > div:last-child { border-right: 0; }
+  .stat-strip > * { text-align: center; padding: 0 18px; border-right: 1px solid var(--line); }
+  .stat-strip > *:last-child { border-right: 0; }
+  a.stat-link { text-decoration: none; color: inherit; transition: transform .2s; display: block; }
+  a.stat-link:hover { transform: translateY(-3px); }
+  a.stat-link .lbl .verify { display: block; color: var(--blue); font-weight: 600; font-size: 0.82rem; margin-top: 4px; }
   .stat-strip .num { font-size: clamp(2rem,5vw,3rem); font-weight: 800; letter-spacing: -0.03em;
     background: linear-gradient(120deg,#0071e3,#7e57c2); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .stat-strip .lbl { color: var(--muted); font-size: 0.92rem; margin-top: 6px; }
@@ -158,6 +161,13 @@
   .skill-card h3 { font-size: 1.28rem; font-weight: 700; margin-bottom: 14px; letter-spacing: -0.01em; }
   .tags { display: flex; flex-wrap: wrap; gap: 8px; }
   .tag { font-size: 0.82rem; color: var(--text); background: var(--bg-tint); border: 1px solid var(--line); border-radius: 980px; padding: 6px 13px; font-weight: 500; }
+  .certs-wrap { margin-top: 40px; text-align: center; }
+  .certs-label { color: var(--faint); font-size: 0.92rem; font-weight: 500; margin-bottom: 16px; }
+  .certs { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .cert { display: inline-flex; align-items: center; gap: 10px; background: #fff; border: 1px solid var(--line); border-radius: 980px; padding: 11px 20px; font-size: 0.92rem; font-weight: 500; color: var(--text); box-shadow: var(--shadow); transition: transform .2s, border-color .2s, box-shadow .2s; }
+  .cert:hover { border-color: var(--blue); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+  .cert svg { width: 17px; height: 17px; color: #ff9900; flex-shrink: 0; }
+  .cert .verify { color: var(--blue); font-weight: 600; font-size: 0.82rem; }
 
   /* Experience */
   .exp { background: var(--bg-section); }
@@ -224,7 +234,7 @@
     .menu-btn { display: block; }
     .skill-grid, .proj-grid { grid-template-columns: 1fr; }
     .stat-strip { grid-template-columns: 1fr 1fr; gap: 36px 0; }
-    .stat-strip > div:nth-child(2) { border-right: 0; }
+    .stat-strip > *:nth-child(2) { border-right: 0; }
     .job { grid-template-columns: 1fr; gap: 8px; }
     .job .when { padding-top: 0; }
     section { padding: 76px 0; }
@@ -251,7 +261,7 @@
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
-      <a href="Sai_Mulagan_Resume.pdf" class="nav-cta" download>Résumé</a>
+      <a href="Sai_Mulagan_Resume.pdf" class="nav-cta" download>Resume</a>
     </div>
     <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
   </nav>
@@ -261,12 +271,12 @@
   <!-- HERO -->
   <section class="hero">
     <div class="wrap">
-      <div class="eyebrow reveal in">Data Scientist · ML Engineer</div>
-      <h1 class="reveal in">Data, modeled.<br /><span class="grad">Decisions, shipped.</span></h1>
-      <p class="sub reveal in">I'm Sai — I build ML systems across the full lifecycle, from raw data pipelines to deployed models that move real metrics.</p>
+      <div class="eyebrow reveal in">Data Scientist · San Francisco</div>
+      <h1 class="reveal in">Hi, I'm Sai. I build ML that makes it <span class="grad">out of the notebook.</span></h1>
+      <p class="sub reveal in">I like owning the whole problem: cleaning the data, building the model, and shipping it so people actually use it. Right now I'm at Stanford Medicine, working on AI that helps doctors catch glaucoma progression earlier.</p>
       <div class="hero-actions reveal in">
-        <a href="#projects" class="btn btn-fill">See my work</a>
-        <a href="Sai_Mulagan_Resume.pdf" class="btn btn-link" download>Download résumé <span class="chev">›</span></a>
+        <a href="mailto:mulaganss@gmail.com" class="btn btn-fill">Email me</a>
+        <a href="#projects" class="btn btn-link">See my work <span class="chev">›</span></a>
       </div>
     </div>
 
@@ -295,10 +305,10 @@
     </div>
 
     <div class="stat-strip">
-      <div class="reveal"><div class="num">~3 yrs</div><div class="lbl">ML &amp; data experience</div></div>
-      <div class="reveal"><div class="num">320K+</div><div class="lbl">patient records modeled</div></div>
-      <div class="reveal"><div class="num">$1M+</div><div class="lbl">est. annual savings driven</div></div>
-      <div class="reveal"><div class="num">2×</div><div class="lbl">AWS certifications</div></div>
+      <div class="reveal"><div class="num">~3 yrs</div><div class="lbl">building ML, from research to production</div></div>
+      <div class="reveal"><div class="num">$1M/yr</div><div class="lbl">estimated savings from my forecasting models I've worked on at Walmart</div></div>
+      <div class="reveal"><div class="num">320K+</div><div class="lbl">patient records behind my pipelines at Stanford</div></div>
+      <a class="reveal stat-link" href="#certs"><div class="num">3</div><div class="lbl">AWS certifications, including ML Specialty<span class="verify">View badges ↓</span></div></a>
     </div>
   </section>
 
@@ -309,9 +319,8 @@
       <h2 class="sec-title reveal">The whole stack of a problem.</h2>
       <div class="about-grid">
         <div class="about-copy reveal">
-          <p>I like owning a problem end to end — pulling messy data into clean pipelines, training models that actually move a metric, and shipping them so people can use the results.</p>
           <p>At <strong>Stanford's OPTIMA group</strong> I build reproducible deep-learning and LLM pipelines on hundreds of thousands of longitudinal patient records, fusing imaging, EHR, and clinical text to forecast disease progression. Before that I engineered production ML pipelines at <strong>Vertex Pharmaceuticals</strong> and built forecasting, pricing, and segmentation models at <strong>Walmart</strong> worth an estimated <strong>$1M+ a year</strong>.</p>
-          <p>I hold a Master's in Data Science &amp; AI from <strong>USF</strong> and two AWS certifications, and I'm strongest in <strong>Python, SQL, and the AWS/GCP cloud stack</strong>.</p>
+          <p>I hold a Master's in Data Science &amp; AI from <strong>USF</strong> and <strong>three AWS certifications</strong>, and I'm strongest in <strong>Python, SQL, and the AWS/GCP cloud stack</strong>.</p>
         </div>
         <div class="about-media reveal">
           <img src="presenting.jpg" alt="Sai at a poster session presenting his glaucoma progression research" loading="lazy" onerror="this.remove()" />
@@ -351,6 +360,24 @@
           <div class="tags"><span class="tag">AWS (S3, EC2, SageMaker, Glue)</span><span class="tag">GCP</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Terraform</span><span class="tag">MLflow</span><span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">CI/CD</span><span class="tag">A/B Testing</span></div>
         </div>
       </div>
+
+      <div class="certs-wrap reveal" id="certs">
+        <p class="certs-label">AWS certifications — verified on Credly</p>
+        <div class="certs">
+          <a class="cert" href="https://www.credly.com/badges/72e9cf55-820a-4104-8bd7-cda1e1c9c199/linked_in_profile" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 3 6v6c0 5 3.8 8.6 9 10 5.2-1.4 9-5 9-10V6l-9-4z"/></svg>
+            AWS Certified Machine Learning – Specialty <span class="verify">Verify ↗</span>
+          </a>
+          <a class="cert" href="https://www.credly.com/badges/5b5ef61f-6a23-4423-999b-3d17a1e0f43f" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 3 6v6c0 5 3.8 8.6 9 10 5.2-1.4 9-5 9-10V6l-9-4z"/></svg>
+            AWS Certified Solutions Architect – Associate <span class="verify">Verify ↗</span>
+          </a>
+          <a class="cert" href="https://www.credly.com/badges/4ab4bda1-6759-4f0b-829b-394903f9d35b/linked_in_profile" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 3 6v6c0 5 3.8 8.6 9 10 5.2-1.4 9-5 9-10V6l-9-4z"/></svg>
+            AWS Certified Cloud Practitioner <span class="verify">Verify ↗</span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -358,7 +385,7 @@
   <section id="experience" class="exp">
     <div class="wide">
       <div class="sec-tag reveal">Experience</div>
-      <h2 class="sec-title reveal">Where I've shipped.</h2>
+      <h2 class="sec-title reveal">Where I've worked.</h2>
       <div class="timeline">
 
         <div class="job reveal">
@@ -503,7 +530,7 @@
         </a>
         <a class="clink" href="Sai_Mulagan_Resume.pdf" download>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
-          Résumé
+          Resume
         </a>
       </div>
     </div>
