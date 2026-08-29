@@ -199,12 +199,14 @@
   /* Experience */
   .exp { background: var(--bg-section); }
   .timeline { max-width: 820px; margin: 60px auto 0; }
-  .job { display: grid; grid-template-columns: 150px 1fr; gap: 30px; padding: 34px 0; border-top: 1px solid var(--line); align-items: center; }
+  .job { display: grid; grid-template-columns: 150px 1fr; gap: 30px; padding: 34px 0; border-top: 1px solid var(--line); }
   .job:first-child { border-top: 0; }
-  .job .when { color: var(--faint); font-size: 0.95rem; font-weight: 500; text-align: center; }
+  .job .when { color: var(--faint); font-size: 0.95rem; font-weight: 500; padding-top: 4px;
+    display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .job .when .meta { margin-bottom: 20px; }
   .job .when .now { display: inline-block; margin-top: 8px; font-size: 0.72rem; font-weight: 600; color: #1a8a3a; background: #e7f7ec; border-radius: 980px; padding: 3px 10px; }
   .job .when .co-logo {
-    display: block; width: 112px; height: 112px; margin: 20px auto 0;
+    display: block; width: 112px; height: 112px; margin: auto 0;
     border-radius: 24px; border: 1px solid rgba(0,0,0,0.08);
     box-shadow: 0 4px 14px rgba(0,0,0,0.11);
     object-fit: cover; background: #fff;
@@ -269,8 +271,9 @@
     .stat-strip { grid-template-columns: 1fr 1fr; gap: 36px 0; }
     .stat-strip > *:nth-child(2) { border-right: 0; }
     .job { grid-template-columns: 1fr; gap: 8px; }
-    .job .when { padding-top: 0; text-align: left; }
-    .job .when .co-logo { width: 84px; height: 84px; border-radius: 18px; margin: 12px 0 0; }
+    .job .when { padding-top: 0; text-align: left; align-items: flex-start; }
+    .job .when .meta { margin-bottom: 12px; }
+    .job .when .co-logo { width: 84px; height: 84px; border-radius: 18px; margin: 0; }
     section { padding: 76px 0; }
     .hero { padding: 60px 0 0; }
   }
@@ -433,7 +436,7 @@
       <div class="timeline">
 
         <div class="job reveal">
-          <div class="when">Aug 2026 – Present<br /><span class="now">● Current</span>
+          <div class="when"><div class="meta">Aug 2026 – Present<br /><span class="now">● Current</span></div>
             <img class="co-logo" src="logo-united.png" alt="" loading="lazy" onerror="this.remove()" /></div>
           <div>
             <h3>Senior Analyst, Safety Analytics <span class="at">· United Airlines</span></h3>
@@ -447,7 +450,7 @@
         </div>
 
         <div class="job reveal">
-          <div class="when">Sep 2025 – Aug 2026
+          <div class="when"><div class="meta">Sep 2025 – Aug 2026</div>
             <img class="co-logo" src="logo-stanford.png" alt="" loading="lazy" onerror="this.remove()" /></div>
           <div>
             <h3>Data Scientist <span class="at">· Stanford OPTIMA</span></h3>
@@ -461,7 +464,7 @@
         </div>
 
         <div class="job reveal">
-          <div class="when">May 2025 – Aug 2025
+          <div class="when"><div class="meta">May 2025 – Aug 2025</div>
             <img class="co-logo" src="logo-vertex.png" alt="" loading="lazy" onerror="this.remove()" /></div>
           <div>
             <h3>Data Engineer, Intern <span class="at">· Vertex Pharmaceuticals</span></h3>
@@ -475,7 +478,7 @@
         </div>
 
         <div class="job reveal">
-          <div class="when">May 2024 – May 2025
+          <div class="when"><div class="meta">May 2024 – May 2025</div>
             <img class="co-logo" src="logo-walmart.png" alt="" loading="lazy" onerror="this.remove()" /></div>
           <div>
             <h3>Data Scientist, Co-op <span class="at">· Walmart</span></h3>
@@ -489,7 +492,7 @@
         </div>
 
         <div class="job reveal">
-          <div class="when">May 2023 – Aug 2023
+          <div class="when"><div class="meta">May 2023 – Aug 2023</div>
             <img class="co-logo" src="logo-walmart.png" alt="" loading="lazy" onerror="this.remove()" /></div>
           <div>
             <h3>Data Scientist, Intern <span class="at">· Walmart</span></h3>
