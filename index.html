@@ -199,13 +199,13 @@
   /* Experience */
   .exp { background: var(--bg-section); }
   .timeline { max-width: 820px; margin: 60px auto 0; }
-  .job { display: grid; grid-template-columns: 150px 1fr; gap: 30px; padding: 34px 0; border-top: 1px solid var(--line); }
+  .job { display: grid; grid-template-columns: 150px 1fr; gap: 30px; padding: 34px 0; border-top: 1px solid var(--line); align-items: center; }
   .job:first-child { border-top: 0; }
-  .job .when { color: var(--faint); font-size: 0.95rem; font-weight: 500; padding-top: 4px; }
+  .job .when { color: var(--faint); font-size: 0.95rem; font-weight: 500; text-align: center; }
   .job .when .now { display: inline-block; margin-top: 8px; font-size: 0.72rem; font-weight: 600; color: #1a8a3a; background: #e7f7ec; border-radius: 980px; padding: 3px 10px; }
   .job .when .co-logo {
-    display: block; width: 96px; height: 96px; margin-top: 18px;
-    border-radius: 21px; border: 1px solid rgba(0,0,0,0.08);
+    display: block; width: 112px; height: 112px; margin: 20px auto 0;
+    border-radius: 24px; border: 1px solid rgba(0,0,0,0.08);
     box-shadow: 0 4px 14px rgba(0,0,0,0.11);
     object-fit: cover; background: #fff;
   }
@@ -269,8 +269,8 @@
     .stat-strip { grid-template-columns: 1fr 1fr; gap: 36px 0; }
     .stat-strip > *:nth-child(2) { border-right: 0; }
     .job { grid-template-columns: 1fr; gap: 8px; }
-    .job .when { padding-top: 0; }
-    .job .when .co-logo { width: 72px; height: 72px; border-radius: 16px; margin-top: 12px; }
+    .job .when { padding-top: 0; text-align: left; }
+    .job .when .co-logo { width: 84px; height: 84px; border-radius: 18px; margin: 12px 0 0; }
     section { padding: 76px 0; }
     .hero { padding: 60px 0 0; }
   }
