@@ -11,21 +11,22 @@
   "name": "Sai Mulagan",
   "url": "https://saimulagan.github.io/",
   "image": "https://saimulagan.github.io/headshot.jpg",
-  "jobTitle": "Data Scientist",
-  "worksFor": { "@type": "Organization", "name": "Stanford Medicine" },
-  "address": { "@type": "PostalAddress", "addressLocality": "San Francisco", "addressRegion": "CA" },
+  "jobTitle": "Senior Analyst, Safety Analytics",
+  "worksFor": { "@type": "Organization", "name": "United Airlines" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of San Francisco" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Chicago", "addressRegion": "IL" },
   "email": "mailto:mulaganss@gmail.com",
   "sameAs": [
     "https://github.com/saimulagan",
     "https://www.linkedin.com/in/saimulagan"
   ],
-  "knowsAbout": ["Machine Learning", "Artificial Intelligence", "MLOps", "Data Science", "Python", "SQL", "LLMs"]
+  "knowsAbout": ["Machine Learning", "Artificial Intelligence", "MLOps", "Data Science", "Safety Analytics", "Python", "SQL", "LLMs"]
 }
 </script>
-<meta name="description" content="Sai Mulagan is a data scientist in San Francisco. Stanford Medicine, Vertex Pharmaceuticals, and Walmart. Python, SQL, LLMs, and cloud MLOps." />
+<meta name="description" content="Sai Mulagan is a data scientist and Senior Analyst on the Safety Management System analytics team at United Airlines in Chicago. Previously Stanford Medicine, Vertex Pharmaceuticals, and Walmart. Python, SQL, LLMs, and cloud MLOps." />
 <meta name="author" content="Sai Mulagan" />
 <meta property="og:title" content="Sai Mulagan | Data Scientist" />
-<meta property="og:description" content="Data scientist in San Francisco. From raw data to models that ship." />
+<meta property="og:description" content="Data scientist at United Airlines. From raw data to models that ship." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://saimulagan.github.io/" />
 <meta property="og:image" content="https://saimulagan.github.io/og-image.png" />
@@ -33,7 +34,7 @@
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Sai Mulagan | Data Scientist" />
-<meta name="twitter:description" content="Data scientist in San Francisco. From raw data to models that ship." />
+<meta name="twitter:description" content="Data scientist at United Airlines. From raw data to models that ship." />
 <meta name="twitter:image" content="https://saimulagan.github.io/og-image.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -168,6 +169,13 @@
   .about-media img { width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 1; }
   .about-media .ph { position: absolute; inset: 0; z-index: 0; display: grid; place-items: center; text-align: center; color: #6b6f89; font-size: 0.9rem; font-weight: 500; padding: 24px; line-height: 1.4; }
   .about-media .ph svg { width: 38px; height: 38px; margin: 0 auto 8px; display: block; opacity: 0.7; }
+  .figcap { color: var(--faint); font-size: 0.88rem; line-height: 1.45; margin-top: 12px; text-align: center; }
+
+  /* standalone photo figure (used in Experience) */
+  .photo-figure { max-width: 560px; margin: 52px auto 0; }
+  .photo-figure .frame { position: relative; border-radius: var(--radius); overflow: hidden;
+    box-shadow: var(--shadow-lg); aspect-ratio: 4/3; background: linear-gradient(135deg,#dfe7f5,#efe3f3); display: grid; place-items: center; }
+  .photo-figure .frame img { width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 1; }
 
   /* Skills */
   .skills { background: var(--bg-tint); }
@@ -290,9 +298,9 @@
   <!-- HERO -->
   <section class="hero">
     <div class="wrap">
-      <div class="eyebrow reveal in">Sai Mulagan · Data Scientist · San Francisco</div>
+      <div class="eyebrow reveal in">Sai Mulagan · Data Scientist · Chicago</div>
       <h1 class="reveal in">Hi, I'm Sai. I solve real problems with <span class="grad">AI and machine learning.</span></h1>
-      <p class="sub reveal in">I like owning the whole problem: cleaning the data, building the model, and shipping it so people actually use it. Right now I'm at Stanford Medicine, working on AI that helps doctors catch glaucoma progression earlier.</p>
+      <p class="sub reveal in">I like owning the whole problem: cleaning the data, building the model, and shipping it so people actually use it. Right now I'm at United Airlines, turning safety data from across the airline into the metrics and dashboards that keep operations safe.</p>
       <div class="hero-actions reveal in">
         <a href="mailto:mulaganss@gmail.com" class="btn btn-fill">Email me</a>
         <a href="#projects" class="btn btn-link">See my work <span class="chev">›</span></a>
@@ -311,9 +319,10 @@
         </div>
         <div class="portrait-meta">
           <h2>Sai Mulagan</h2>
-          <div class="where">Data Scientist @ Stanford OPTIMA · San Francisco, CA</div>
+          <div class="where">Senior Analyst, Safety Analytics @ United Airlines · Chicago, IL</div>
           <div class="chips">
             <span class="chip">Python &amp; SQL</span>
+            <span class="chip">Safety Analytics</span>
             <span class="chip">LLMs &amp; RAG</span>
             <span class="chip">Deep Learning</span>
             <span class="chip">AWS &amp; GCP</span>
@@ -326,7 +335,7 @@
     <div class="stat-strip">
       <div class="reveal"><div class="num">~3 yrs</div><div class="lbl">building ML, from research to production</div></div>
       <div class="reveal"><div class="num">$1M/yr</div><div class="lbl">estimated savings from my forecasting models I've worked on at Walmart</div></div>
-      <div class="reveal"><div class="num">320K+</div><div class="lbl">patient records behind my pipelines at Stanford</div></div>
+      <div class="reveal"><div class="num">320K+</div><div class="lbl">patient records behind the pipelines I built at Stanford</div></div>
       <a class="reveal stat-link" href="#certs"><div class="num">3</div><div class="lbl">AWS certifications, including ML Specialty<span class="verify">View badges ↓</span></div></a>
     </div>
   </section>
@@ -338,16 +347,20 @@
       <h2 class="sec-title reveal">The whole stack of a problem.</h2>
       <div class="about-grid">
         <div class="about-copy reveal">
-          <p>At <strong>Stanford's OPTIMA group</strong> I build reproducible deep-learning and LLM pipelines on hundreds of thousands of longitudinal patient records, fusing imaging, EHR, and clinical text to forecast disease progression. Before that I engineered production ML pipelines at <strong>Vertex Pharmaceuticals</strong> and built forecasting, pricing, and segmentation models at <strong>Walmart</strong> worth an estimated <strong>$1M+ a year</strong>.</p>
+          <p>I'm a <strong>Senior Analyst on the Safety Management System (SMS) analytics team at United Airlines</strong>, where I turn safety data from across the airline into the metrics and dashboards leaders use to keep operations safe. Safety is United's number one value, and getting to point data science at something that genuinely keeps people safe is a good fit.</p>
+          <p>Before United I built predictive models for glaucoma research at <strong>Stanford's OPTIMA group</strong>, fusing imaging, EHR, and clinical text across hundreds of thousands of longitudinal patient records. Earlier I engineered production ETL and ML pipelines at <strong>Vertex Pharmaceuticals</strong> and built forecasting, pricing, and segmentation models at <strong>Walmart</strong> worth an estimated <strong>$1M+ a year</strong>.</p>
           <p>I hold a Master's in Data Science &amp; AI from <strong>USF</strong> and <strong>three AWS certifications</strong>, and I'm strongest in <strong>Python, SQL, and the AWS/GCP cloud stack</strong>.</p>
         </div>
-        <div class="about-media reveal">
-          <img src="presenting.jpg" alt="Sai at a poster session presenting his glaucoma progression research" loading="lazy" onerror="this.remove()" />
-          <div class="ph">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-            Add presenting.jpg
+        <figure class="reveal">
+          <div class="about-media">
+            <img src="united-first-day.jpg" alt="Sai with his new-hire group on his first day at United Airlines, in front of a Welcome to United screen" loading="lazy" onerror="this.remove()" />
+            <div class="ph">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              Add united-first-day.jpg
+            </div>
           </div>
-        </div>
+          <figcaption class="figcap">Day one at United Airlines with the new-hire class, August 2026.</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -381,7 +394,7 @@
       </div>
 
       <div class="certs-wrap reveal" id="certs">
-        <p class="certs-label">AWS certifications — verified on Credly</p>
+        <p class="certs-label">AWS certifications, verified on Credly</p>
         <div class="certs">
           <a class="cert" href="https://www.credly.com/badges/72e9cf55-820a-4104-8bd7-cda1e1c9c199/linked_in_profile" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 3 6v6c0 5 3.8 8.6 9 10 5.2-1.4 9-5 9-10V6l-9-4z"/></svg>
@@ -405,10 +418,31 @@
     <div class="wide">
       <div class="sec-tag reveal">Experience</div>
       <h2 class="sec-title reveal">Where I've worked.</h2>
+
+      <figure class="photo-figure reveal">
+        <div class="frame">
+          <img src="presenting.jpg" alt="Sai at a poster session presenting his glaucoma progression research at Stanford" loading="lazy" onerror="this.remove()" />
+        </div>
+        <figcaption class="figcap">Presenting glaucoma progression research at Stanford OPTIMA.</figcaption>
+      </figure>
+
       <div class="timeline">
 
         <div class="job reveal">
-          <div class="when">Sep 2025 — Present<br /><span class="now">● Current</span></div>
+          <div class="when">Aug 2026 – Present<br /><span class="now">● Current</span></div>
+          <div>
+            <h3>Senior Analyst, Safety Analytics <span class="at">· United Airlines</span></h3>
+            <div class="loc">Chicago, IL · Safety Management System (SMS)</div>
+            <ul>
+              <li>Build the metrics, models, and dashboards that turn <b>safety data from across the airline</b> into signals operations and safety leaders act on.</li>
+              <li>Work in <b>Python and SQL</b> across the Safety Management System to surface risk trends earlier and make safety reporting reproducible and self-serve.</li>
+              <li>Partner with safety teams and analysts to translate frontline reporting into measurable indicators of operational risk.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="job reveal">
+          <div class="when">Sep 2025 – Aug 2026</div>
           <div>
             <h3>Data Scientist <span class="at">· Stanford OPTIMA</span></h3>
             <div class="loc">Palo Alto, CA · Ophthalmic Informatics &amp; AI Group</div>
@@ -421,7 +455,7 @@
         </div>
 
         <div class="job reveal">
-          <div class="when">May 2025 — Aug 2025</div>
+          <div class="when">May 2025 – Aug 2025</div>
           <div>
             <h3>Data Engineer, Intern <span class="at">· Vertex Pharmaceuticals</span></h3>
             <div class="loc">Boston, MA</div>
@@ -434,7 +468,7 @@
         </div>
 
         <div class="job reveal">
-          <div class="when">May 2024 — May 2025</div>
+          <div class="when">May 2024 – May 2025</div>
           <div>
             <h3>Data Scientist, Co-op <span class="at">· Walmart</span></h3>
             <div class="loc">Bentonville, AR</div>
@@ -447,7 +481,7 @@
         </div>
 
         <div class="job reveal">
-          <div class="when">May 2023 — Aug 2023</div>
+          <div class="when">May 2023 – Aug 2023</div>
           <div>
             <h3>Data Scientist, Intern <span class="at">· Walmart</span></h3>
             <div class="loc">Bentonville, AR</div>
@@ -487,7 +521,7 @@
             </svg>
           </div>
           <div class="body">
-            <span class="date">Feb — Mar 2026</span>
+            <span class="date">Feb – Mar 2026</span>
             <h3>Yelp Recommender System</h3>
             <p>A distributed recommendation pipeline on Apache Airflow, MongoDB, and Google Cloud Storage, with a Funk SVD collaborative-filtering model served via FastAPI on Cloud Run.</p>
             <span class="metric">RMSE ≈ 1.33</span>
@@ -512,8 +546,8 @@
             </svg>
           </div>
           <div class="body">
-            <span class="date">May — Jun 2026</span>
-            <h3>LeaseLens — Document AI</h3>
+            <span class="date">May – Jun 2026</span>
+            <h3>LeaseLens: Document AI</h3>
             <p>An OCR + LLM extraction system pulling 15 structured fields from unstructured lease PDFs. Swappable LLM and offline-regex extractors behind one interface, with Tesseract OCR and a rule layer that flags policy exceptions.</p>
             <span class="metric">&lt; 1s per document</span>
             <div class="stack"><span>Python</span><span>FastAPI</span><span>Tesseract</span><span>LLMs</span><span>Regex</span></div>
@@ -533,7 +567,7 @@
     <div class="wrap">
       <div class="sec-tag reveal">Get in touch</div>
       <h2 class="sec-title reveal">Let's build something together.</h2>
-      <p class="sec-intro reveal">Open to data scientist, data engineer, data analyst, and ML engineer roles. Email is the fastest way to reach me.</p>
+      <p class="sec-intro reveal">Always happy to talk data science, safety analytics, and getting ML into production. Email is the fastest way to reach me.</p>
       <div class="contact-links reveal">
         <a class="clink primary" href="mailto:mulaganss@gmail.com">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
@@ -556,7 +590,7 @@
   </section>
 </main>
 
-<footer>Designed &amp; built by Sai Mulagan · San Francisco, CA · 2026</footer>
+<footer>Designed &amp; built by Sai Mulagan · Chicago, IL · 2026</footer>
 
 <script>
   var menuBtn = document.getElementById('menuBtn');
