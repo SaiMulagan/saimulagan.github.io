@@ -203,6 +203,12 @@
   .job:first-child { border-top: 0; }
   .job .when { color: var(--faint); font-size: 0.95rem; font-weight: 500; padding-top: 4px; }
   .job .when .now { display: inline-block; margin-top: 8px; font-size: 0.72rem; font-weight: 600; color: #1a8a3a; background: #e7f7ec; border-radius: 980px; padding: 3px 10px; }
+  .job .when .co-logo {
+    display: block; width: 58px; height: 58px; margin-top: 16px;
+    border-radius: 13px; border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+    object-fit: cover; background: #fff;
+  }
   .job h3 { font-size: 1.32rem; font-weight: 700; letter-spacing: -0.01em; }
   .job h3 .at { color: var(--blue); }
   .job .loc { color: var(--faint); font-size: 0.95rem; margin: 3px 0 16px; }
@@ -264,6 +270,7 @@
     .stat-strip > *:nth-child(2) { border-right: 0; }
     .job { grid-template-columns: 1fr; gap: 8px; }
     .job .when { padding-top: 0; }
+    .job .when .co-logo { width: 42px; height: 42px; border-radius: 11px; margin-top: 10px; }
     section { padding: 76px 0; }
     .hero { padding: 60px 0 0; }
   }
@@ -426,7 +433,8 @@
       <div class="timeline">
 
         <div class="job reveal">
-          <div class="when">Aug 2026 – Present<br /><span class="now">● Current</span></div>
+          <div class="when">Aug 2026 – Present<br /><span class="now">● Current</span>
+            <img class="co-logo" src="logo-united.png" alt="" loading="lazy" onerror="this.remove()" /></div>
           <div>
             <h3>Senior Analyst, Safety Analytics <span class="at">· United Airlines</span></h3>
             <div class="loc">Chicago, IL · Safety Management System (SMS)</div>
@@ -439,7 +447,8 @@
         </div>
 
         <div class="job reveal">
-          <div class="when">Sep 2025 – Aug 2026</div>
+          <div class="when">Sep 2025 – Aug 2026
+            <img class="co-logo" src="logo-stanford.png" alt="" loading="lazy" onerror="this.remove()" /></div>
           <div>
             <h3>Data Scientist <span class="at">· Stanford OPTIMA</span></h3>
             <div class="loc">Palo Alto, CA · Ophthalmic Informatics &amp; AI Group</div>
@@ -452,7 +461,8 @@
         </div>
 
         <div class="job reveal">
-          <div class="when">May 2025 – Aug 2025</div>
+          <div class="when">May 2025 – Aug 2025
+            <img class="co-logo" src="logo-vertex.png" alt="" loading="lazy" onerror="this.remove()" /></div>
           <div>
             <h3>Data Engineer, Intern <span class="at">· Vertex Pharmaceuticals</span></h3>
             <div class="loc">Boston, MA</div>
@@ -465,7 +475,8 @@
         </div>
 
         <div class="job reveal">
-          <div class="when">May 2024 – May 2025</div>
+          <div class="when">May 2024 – May 2025
+            <img class="co-logo" src="logo-walmart.png" alt="" loading="lazy" onerror="this.remove()" /></div>
           <div>
             <h3>Data Scientist, Co-op <span class="at">· Walmart</span></h3>
             <div class="loc">Bentonville, AR</div>
@@ -478,7 +489,8 @@
         </div>
 
         <div class="job reveal">
-          <div class="when">May 2023 – Aug 2023</div>
+          <div class="when">May 2023 – Aug 2023
+            <img class="co-logo" src="logo-walmart.png" alt="" loading="lazy" onerror="this.remove()" /></div>
           <div>
             <h3>Data Scientist, Intern <span class="at">· Walmart</span></h3>
             <div class="loc">Bentonville, AR</div>
